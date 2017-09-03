@@ -37,11 +37,11 @@ class PlayList extends Component {
   render() {
     return (
       <div className="width">
-        <form>
-          <input className="updateButton" type="button"  value="Update" />
-        </form>
+        <button>
+          <input className="updateButton" type="button"  value="Update" onClick={this.fetchData}/>
+        </button>
         <div>
-          <PlayListItem songs={this.state.songs} onClick={this.fetchData} />
+          <PlayListItem songs={this.state.songs} />
         </div>
       </div>
     );

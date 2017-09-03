@@ -56,10 +56,10 @@ import "../styles/App.css";
     // line below //>>>>>We also update the value of state.name back to an empty string. This clears our input box since its value is the value of this.state.name.
     //     this.setState({students: this.state.students, name: ""});
     this.setState({
-      userName: '',
+       userName: '',
        songNotes: '',
        songArtist: '',
-       songTitle:''
+       songTitle: ''
      });
 }
 
@@ -67,26 +67,28 @@ render() {
   return (
     <form className="formData width" onSubmit={this.addToList}>
       <div className="formDiv">
+
         <label className="formLabel">User Name:</label>
-        <br />
-        <input className="formInput" type="text" placeholder="Enter UserName" onChange={this.handleUserName} value={this.state.username} required />
+        <input className="formInput" type="text" placeholder="Enter UserName" onChange={this.handleUserName} value={this.state.userName}/>
+
       </div>
       <div className="formDiv">
+
         <label className="formLabel">Artist/Band:</label>
-        <br />
-        <input className="formInput" type="text" placeholder="Enter Artist/Band" onChange={this.handleSongArtist} value={this.state.songArtist} />
+        <input className="formInput" type="text" placeholder="Enter Artist/Band" onChange={this.handleSongArtist} value={this.state.songArtist}/>
+
       </div>
       <div className="formDiv">
         <label className="formLabel">Song Title:</label>
-        <br />
-        <input className="formInput" type="text" placeholder="Enter Song Title" onChange={this.handleSongTitle} value={this.state.songTitle} />
+
+        <input className="formInput" type="text" placeholder="Enter Song Title" onChange={this.handleSongTitle} value={this.state.songTitle}/>
       </div>
       <div className="formDiv">
         <label className="formLabel">Notes About Song:</label>
-        <br />
-        <input className="formNotes" type="text" onChange={this.handleSongNotes} value={this.state.songNotes} />
+
+        <input className="formNotes" type="text" onChange={this.handleSongNotes} value={this.state.songNotes}/>
       </div>
-      <input className="submitForm" type="submit" onClick={this.updateTrack}/>
+      <input className="submitForm" type="submit" onClick={this.addToList}/>
     </form>
    );
   }

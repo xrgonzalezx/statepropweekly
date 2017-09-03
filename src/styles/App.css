@@ -8,7 +8,7 @@
 }
 
 .App-header {
-  background-color: #222;
+  background-color: #1578DC;
   height: 150px;
   padding: 20px;
   color: white;
@@ -41,6 +41,7 @@
   padding: 25px;
   margin: 15px 0 15px 0;
   width: 100%;
+  text-shadow: grey;
 }
 
 .topNav {
@@ -53,6 +54,7 @@
 h1 {
   margin: 0 0 5% 0;
   font-size: 4rem;
+  background-color: #1683D1;
 }
 
 .musicData {
